@@ -5,7 +5,10 @@ import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public abstract class CryptographyFactory {
+public class CryptographyFactory {
+    private CryptographyFactory() {
+    }
+
     public static Cryptography createCryptography(String algorithm, int key) {
         switch (algorithm) {
             case "shift":

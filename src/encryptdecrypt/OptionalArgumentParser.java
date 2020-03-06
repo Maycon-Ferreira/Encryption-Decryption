@@ -1,6 +1,9 @@
 package encryptdecrypt;
 
-public abstract class OptionalArgumentParser {
+public class OptionalArgumentParser {
+    private OptionalArgumentParser(){
+    }
+
     public static String parseArgument(String[] args, String argument) {
         for (int i = 0; i < args.length; i++) {
             if (args[i].equals(argument))
